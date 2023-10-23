@@ -29,3 +29,63 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ncm-issuer:latest,${{ secrets.DOCKER_USERNAME }}/ncm-issuer:${{ env.TAG }}
+
+  mkdocs:
+    name: Build mkdocs    runs-on: ubuntu-latest    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Install MkDocs and dependencies
+      run: |
+        pip install mkdocs
+
+    - name: Build MkDocs Configuration
+      run: |
+        mkdocs build        
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: ./site
+        token: ${{ secrets.GITHUB_TOKEN  }}
+        branch: gh-pages
+        target-folder: docs      
+
+  helm:
+    name: Publish binaries
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Package charts
+      run: helm package helm/*
+
+    - name: Move to folder
+      run: mkdir ./charts -p && mv ./*.tgz ./charts    
+
+    - name: Upload chart to gh-pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: ./charts
+        token: ${{ secrets.GITHUB_TOKEN  }}
+        branch: gh-pages
+        target-folder: charts
+
+    - name: Checkout to gh-pages
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+
+    - name: Index charts
+      run: helm repo index ./charts      
+
+    - name: Commit helm index
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Update helm index
+        file_pattern: './charts/index.yaml'
+
