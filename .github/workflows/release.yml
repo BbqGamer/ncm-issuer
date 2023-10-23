@@ -29,3 +29,67 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ncm-issuer:latest,${{ secrets.DOCKER_USERNAME }}/ncm-issuer:${{ env.TAG }}
+
+  mkdocs:
+    name: Build mkdocs
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Install MkDocs and dependencies
+      run: |
+        pip install mkdocs
+
+    - name: Build MkDocs Configuration
+      run: |
+        mkdocs build        
+
+    - name: Checkout to gh-pages
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        clean: false
+        
+    - name: Copy files to the pages gh-pages
+      run: |
+        mkdir -p ./docs
+        cp -r ./site/* ./docs
+
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Update documentation
+        file_pattern: './docs'
+        skip_checkout: true
+
+  helm:
+    name: Publish binaries
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Package charts
+      run: helm package helm/
+
+    - name: Checkout to gh-pages
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        clean: false
+
+    - name: Move to folder
+      run: mkdir ./charts -p && mv ./*.tgz ./charts    
+
+    - name: Index charts
+      run: helm repo index ./charts      
+    
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Update helm charts 
+        file_pattern: './charts'
+        skip_checkout: true
+
