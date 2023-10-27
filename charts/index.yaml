@@ -3,10 +3,10 @@ entries:
   ncm-issuer:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2023-10-27T15:31:41.569888701Z"
+    created: "2023-10-27T15:48:11.560344395Z"
     description: A Helm chart for cert-manager external issuer with NCM (NetGuard
       Certificate Manager)
-    digest: 744841c45af2940250659035e71880ac2af33d0da9e860863b7bb0094861b9ec
+    digest: d2da6e4f9c42e1959d4cc9534c3e5c5bbc3b1edff155f84c5b29133b5b00c8ee
     home: https://github.com/nokia/ncm-issuer
     icon: https://i.imgur.com/G2p0BwS.png
     keywords:
@@ -28,4 +28,4 @@ entries:
     urls:
     - ncm-issuer-1.1.0.tgz
     version: 1.1.0
-generated: "2023-10-27T15:31:41.56865061Z"
+generated: "2023-10-27T15:48:11.559394095Z"
