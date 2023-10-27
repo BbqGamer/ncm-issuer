@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../1.0.3/">
+        <link rel="prev" href="../tutorials/first-certificate/">
       
+      
+        <link rel="next" href="../../release-notes/1.1.0/">
       
       
       <link rel="icon" href="../../assets/ncm-issuer-logo.svg">
@@ -18,7 +20,7 @@
     
     
       
-        <title>1.0.1 - ncm-issuer</title>
+        <title>Troubleshooting - ncm-issuer</title>
       
     
     
@@ -75,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-first-official-version-of-ncm-issuer" class="md-skip">
+        <a href="#troubleshooting" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.0.1
+              Troubleshooting
             
           </span>
         </div>
@@ -229,11 +231,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../documentation/installation/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../installation/" class="md-tabs__link">
           
   
   Documentation
@@ -247,13 +251,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../1.1.0/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../release-notes/1.1.0/" class="md-tabs__link">
           
   
   Release notes
@@ -331,6 +333,8 @@
       
   
   
+    
+  
   
     
     
@@ -340,12 +344,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -359,7 +363,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Documentation
@@ -372,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -392,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/CRDs/issuer/" class="md-nav__link">
+      <a href="../CRDs/issuer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -471,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/CRDs/cluster-issuer/" class="md-nav__link">
+      <a href="../CRDs/cluster-issuer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -538,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/certificates/certificates/" class="md-nav__link">
+      <a href="../certificates/certificates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -605,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/metrics/enable-metrics/" class="md-nav__link">
+      <a href="../metrics/enable-metrics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -672,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/tutorials/first-certificate/" class="md-nav__link">
+      <a href="../tutorials/first-certificate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -698,9 +702,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../documentation/troubleshooting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -709,6 +733,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-ncm-issuer-logs" class="md-nav__link">
+    Getting ncm-issuer logs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-logging-verbosity-level" class="md-nav__link">
+    Setting logging verbosity level
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-troubleshooting-sidecar" class="md-nav__link">
+    Enabling troubleshooting sidecar
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -725,8 +790,6 @@
       
   
   
-    
-  
   
     
     
@@ -736,12 +799,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -755,7 +818,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Release notes
@@ -768,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.1.0/" class="md-nav__link">
+      <a href="../../release-notes/1.1.0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.0.3/" class="md-nav__link">
+      <a href="../../release-notes/1.0.3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -806,18 +869,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../release-notes/1.0.1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -826,7 +880,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -859,6 +912,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-ncm-issuer-logs" class="md-nav__link">
+    Getting ncm-issuer logs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-logging-verbosity-level" class="md-nav__link">
+    Setting logging verbosity level
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-troubleshooting-sidecar" class="md-nav__link">
+    Enabling troubleshooting sidecar
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -875,12 +957,23 @@
   
 
 
-<h1 id="the-first-official-version-of-ncm-issuer">The first official version of ncm-issuer!</h1>
-<ul>
-<li>Full integration with NCM (fetching CA from db, setting pem chain, adding issued certs to db, renewal support etc.)</li>
-<li>Installation via Helm charts</li>
-<li>Well-developed "spec" section in the issuer .yaml file</li>
-</ul>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="getting-ncm-issuer-logs">Getting ncm-issuer logs</h2>
+<p>In case of any problem, besides checking the status of created resources,
+you can also check the <code>ncm-issuer</code> pod logs:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>kubectl<span class="w"> </span>-n<span class="w"> </span>ncm-issuer<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span><span class="sb">`</span>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-A<span class="w"> </span>-l<span class="w"> </span><span class="nv">app</span><span class="o">=</span>ncm-issuer<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[0].metadata.name}&#39;</span><span class="sb">`</span>
+</span></code></pre></div>
+<p>If you deployed troubleshooting sidecar as well, you can check the <code>ncm-issuer</code> pod logs this way:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>-n<span class="w"> </span>ncm-issuer<span class="w"> </span>logs<span class="w"> </span>-c<span class="w"> </span>ncm-issuer<span class="w"> </span>-f<span class="w"> </span><span class="sb">`</span>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-A<span class="w"> </span>-l<span class="w"> </span><span class="nv">app</span><span class="o">=</span>ncm-issuer<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[0].metadata.name}&#39;</span><span class="sb">`</span>
+</span></code></pre></div>
+<h2 id="setting-logging-verbosity-level">Setting logging verbosity level</h2>
+<p>In the case of increasing logging verbosity level change the <code>logging.logLevel</code> in <code>values.yaml</code> to
+wanted value and update your deployment. To get all possible log messages, simply set the
+<code>logging.logLevel</code> to <strong>3</strong>, you can also additionally change the <code>logging.stacktraceLevel</code> to
+<code>error</code>.</p>
+<h2 id="enabling-troubleshooting-sidecar">Enabling troubleshooting sidecar</h2>
+<p>There is also the possibility of using sidecar for debugging purposes - just change the value of
+<code>sidecar.enabled</code> to <strong>true</strong> in <code>values.yaml</code> and update your deployment.</p>
 
 
 

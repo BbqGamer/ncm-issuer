@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../1.0.3/">
+        <link rel="prev" href="../installation/">
       
+      
+        <link rel="next" href="../CRDs/issuer/">
       
       
       <link rel="icon" href="../../assets/ncm-issuer-logo.svg">
@@ -18,7 +20,7 @@
     
     
       
-        <title>1.0.1 - ncm-issuer</title>
+        <title>Configuration - ncm-issuer</title>
       
     
     
@@ -75,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-first-official-version-of-ncm-issuer" class="md-skip">
+        <a href="#configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.0.1
+              Configuration
             
           </span>
         </div>
@@ -229,11 +231,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../documentation/installation/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../installation/" class="md-tabs__link">
           
   
   Documentation
@@ -247,13 +251,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../1.1.0/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../release-notes/1.1.0/" class="md-tabs__link">
           
   
   Release notes
@@ -331,6 +333,8 @@
       
   
   
+    
+  
   
     
     
@@ -340,12 +344,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -359,7 +363,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Documentation
@@ -372,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -390,9 +394,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../documentation/configuration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -401,6 +425,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ncm-rest-api-credentials" class="md-nav__link">
+    NCM REST API credentials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tls-without-client-authentication" class="md-nav__link">
+    TLS without client authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tls-with-client-authentication" class="md-nav__link">
+    TLS with client authentication
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -451,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/CRDs/issuer/" class="md-nav__link">
+      <a href="../CRDs/issuer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -471,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/CRDs/cluster-issuer/" class="md-nav__link">
+      <a href="../CRDs/cluster-issuer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -538,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/certificates/certificates/" class="md-nav__link">
+      <a href="../certificates/certificates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -605,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/metrics/enable-metrics/" class="md-nav__link">
+      <a href="../metrics/enable-metrics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -672,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/tutorials/first-certificate/" class="md-nav__link">
+      <a href="../tutorials/first-certificate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -700,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/troubleshooting/" class="md-nav__link">
+      <a href="../troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -725,8 +790,6 @@
       
   
   
-    
-  
   
     
     
@@ -736,12 +799,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -755,7 +818,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Release notes
@@ -768,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.1.0/" class="md-nav__link">
+      <a href="../../release-notes/1.1.0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.0.3/" class="md-nav__link">
+      <a href="../../release-notes/1.0.3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -806,18 +869,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../release-notes/1.0.1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -826,7 +880,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -859,6 +912,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ncm-rest-api-credentials" class="md-nav__link">
+    NCM REST API credentials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tls-without-client-authentication" class="md-nav__link">
+    TLS without client authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tls-with-client-authentication" class="md-nav__link">
+    TLS with client authentication
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -875,12 +957,42 @@
   
 
 
-<h1 id="the-first-official-version-of-ncm-issuer">The first official version of ncm-issuer!</h1>
-<ul>
-<li>Full integration with NCM (fetching CA from db, setting pem chain, adding issued certs to db, renewal support etc.)</li>
-<li>Installation via Helm charts</li>
-<li>Well-developed "spec" section in the issuer .yaml file</li>
-</ul>
+<h1 id="configuration">Configuration</h1>
+<p>To make the ncm-issuer work properly, it is necessary to create few Kubernetes secrets
+that contains credentials to NCM REST API and optional TLS configuration.</p>
+<figure>
+<p><img alt="installation" src="../../assets/configuration.gif" /></p>
+</figure>
+<h2 id="ncm-rest-api-credentials">NCM REST API credentials</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;secret-name&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--from-literal<span class="o">=</span><span class="nv">username</span><span class="o">=</span>&lt;username&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--from-literal<span class="o">=</span><span class="nv">usrPassword</span><span class="o">=</span>&lt;password&gt;
+</span></code></pre></div>
+<h2 id="tls-without-client-authentication">TLS without client authentication</h2>
+<div class="language-text highlight"><pre><span></span><code>```bash
+kubectl create secret generic \
+&lt;secret-name&gt; \
+-n &lt;namespace&gt; \
+--from-file=cacert=&lt;ca-for-tls.pem&gt;
+```
+</code></pre></div>
+<h2 id="tls-with-client-authentication">TLS with client authentication</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>&lt;secret-name&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>--from-file<span class="o">=</span><span class="nv">cacert</span><span class="o">=</span>&lt;ca-for-tls.pem&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>--from-file<span class="o">=</span><span class="nv">key</span><span class="o">=</span>&lt;client-auth-pkey.pem&gt;<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>--from-file<span class="o">=</span><span class="nv">cert</span><span class="o">=</span>&lt;client-auth-cert.pem&gt;
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To make sure that specific secret have been created correctly, you can check this
+by using command:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>kubectl<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>describe<span class="w"> </span>secrets<span class="w"> </span>&lt;secret-name&gt;
+</span></code></pre></div>
+</div>
 
 
 
